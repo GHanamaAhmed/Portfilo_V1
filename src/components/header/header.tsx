@@ -1,5 +1,5 @@
 "use client";
-import { memo, useEffect, useLayoutEffect, useState } from "react";
+import { memo} from "react";
 import DarkMode from "./darkMode";
 import Contact from "./contact"
 import NavBarPages from "./navBarPages";
