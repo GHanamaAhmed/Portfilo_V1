@@ -1,0 +1,42 @@
+[
+  {
+    "img": "/img/ghanamaahmed.github.io_Hydra-Lading-Page_ .webp",
+    "title": "VR Landing Page",
+    "description": "",
+    "tech": "HTML, JavaScript, React , CSS, TailwindCSS, Vite, ",
+    "url": "https://ghanamaahmed.github.io/Hydra-Lading-Page/",
+    "urlGithub": "https://github.com/GHanamaAhmed/Hydra-Lading-Page"
+  },
+  {
+    "img": "/img/ghanamaahmed.github.io_Lays-Cryps_ copy.webp",
+    "title": "Lays-Cryps Landing Page",
+    "description": "",
+    "tech": "HTML, JavaScript, React , CSS, TailwindCSS, Vite ",
+    "url": "https://ghanamaahmed.github.io/Hydra-Lading-Page/",
+    "urlGithub": ""
+  },
+  {
+    "img": "/img/ghanamaahmed.github.io_Real-Estate_.webp",
+    "title": "Real Estate Landing Page",
+    "description": "",
+    "tech": "HTML, JavaScript, React , CSS, TailwindCSS, Vite ",
+    "url": "https://ghanamaahmed.github.io/Real-Estate/",
+    "urlGithub": "https://github.com/GHanamaAhmed/Real-Estate"
+  },
+  {
+    "img": "/img/Screenshot from 2024-01-30 06-50-54.webp",
+    "title": "QR-Code-Based Student Attendance System",
+    "description": "Student Attendance System based on QR Code for tracking the attendance of students in the classroom. WebSite and Mobile App",
+    "tech": "HTML, JavaScript, React , CSS, TailwindCSS, Vite , NodeJS, Express, MongoDB, Mongoose, JWT, Bcrypt, QRCode, flutter, Dart, Socket.io",
+    "url": "https://students-attendance.vercel.app/Student-Attendance/sign/signin",
+    "urlGithub": "https://github.com/GHanamaAhmed/students-attendance-web-site"
+  },
+  {
+    "img": "/img/bilwafi.shop_.webp",
+    "title": "beauty shop",
+    "description": "The Beauty Shop project is a comprehensive online platform with Dashboard designed to cater to the beauty needs of clients.",
+    "tech": "HTML, JavaScript, React , CSS, TailwindCSS, Nextjs , NodeJS, Express, MongoDB, Mongoose, Epayment",
+    "url": "https://bilwafi.shop",
+    "urlGithub": ""
+  }
+]

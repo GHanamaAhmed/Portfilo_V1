@@ -8,9 +8,7 @@ export default function footer() {
         <div className="flex flex-row gap-0">
           <NavBarPages />
         </div>
-        <p className="text-darkContent dark:text-lightContent">
-          Designed and built by Pavan MG with Love & Coffee
-        </p>
+        
       </div>
     </div>
   );

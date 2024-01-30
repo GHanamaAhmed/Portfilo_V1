@@ -1,0 +1,27 @@
+{
+  "aboutMe": "I am a software developer with 3 years of experience in the field of information technology, and 2 year of experience in Frontend and I deal a little bit with the backend development. I hold a Bachelor's degree in Computer Science and proficient in web development technologies including HTML, CSS, Bootstrap, Tailwind, JavaScript, React.js,Next.js, Mysql, mongodb, Node.js, Express.js. I also have extensive knowledge in other programming languages such as C, Java, PHP, and Python. I have experience using React Hooks, Redux, Socket.io, and JWT, and can quickly adapt to any new library.",
+  "links": {
+    "github": "https://github.com/GHanamaAhmed",
+    "facebook": "https://hi-in.facebook.com/ahmed.ghanama.9",
+    "linkedin": "https://www.linkedin.com/in/ahmed-ghanama-989810245",
+    "upwork": "https://www.upwork.com/freelancers/~01e4c549f574943046"
+  },
+  "experience": [
+    {
+      "skill": "Bachelor's degree",
+      "typeEmployment": "3 years",
+      "address": "University of Ahmed Draia",
+      "location": "Adrar, Algeria",
+      "dateBegin": "2020",
+      "dateEnd": "2023"
+    },
+    {
+      "skill": "Full Stack Developer",
+      "typeEmployment": "Currently",
+      "address": "Freelance",
+      "location": "Adrar, Algeria",
+      "dateBegin": "2022",
+      "dateEnd": "now"
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 "use client";
 import { useContext, useEffect, useState } from "react";
-import { menuContext } from "../MenuContextProvider";
+import { menuContext } from "./MenuContextProvider";
 export const useHeader = () => {
   const [positionScroll, setPositinScroll] = useState<number>(
     globalThis.screenY
   );
   const [headerPosition, setHeaderPosition] = useState<string>("");
-  const { isMenuActive, setIsMenuActive } = useContext(menuContext);
+  const { isMenuActive } = useContext(menuContext);
   useEffect(() => {
     const handlePosition = () => {
       if (positionScroll < window.scrollY) {
@@ -20,9 +20,6 @@ export const useHeader = () => {
     };
     window.addEventListener("scroll", handlePosition);
     return () => window.removeEventListener("scroll", () => {});
-  }, [positionScroll]);
-  const handleMenu = () => {
-    setIsMenuActive((prevValue) => !prevValue);
-  };
-  return { isMenuActive, headerPosition, handleMenu };
+  }, []);
+  return { headerPosition };
 };

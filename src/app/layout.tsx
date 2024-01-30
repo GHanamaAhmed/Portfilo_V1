@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header/header";
-import Menu from "@/components/menu";
-
+import MenuContextProvider from "@/hooks/MenuContextProvider";
 export const metadata: Metadata = {
   title: "Ghanama Ahmed",
   description: "Web Developer",
@@ -17,12 +16,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div id="root" className="dark:bg-darkMode">
-          <div className="App">
-            <Header />
-            <div className="relative">
-              {children}
-              <Menu />
-            </div>
+          <div className="App relative">
+            <MenuContextProvider>
+              <Header />
+            </MenuContextProvider>
+            <div className="relative">{children}</div>
           </div>
         </div>
       </body>

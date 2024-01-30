@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Github",
+    "path": "/img/akar-icons_github-fill.svg"
+  },
+  {
+    "name": "VSCode HTML",
+    "path": "/img/vscode-icons_file-type-html.svg"
+  },
+  {
+    "name": "VSCode Tailwind",
+    "path": "/img/vscode-icons_file-type-tailwind.svg"
+  },
+  {
+    "name": "Bootstrap",
+    "path": "/img/logos_bootstrap.svg"
+  },
+  {
+    "name": "Git",
+    "path": "/img/logos_git-icon.svg"
+  },
+  {
+    "name": "React",
+    "path": "/img/logos_react.svg"
+  },
+  {
+    "name": "Next JS",
+    "path": "/img/next-js.svg"
+  },
+  {
+    "name": "Redux",
+    "path": "/img/redux.svg"
+  },
+  {
+    "name": "CSS",
+    "path": "/img/vscode-icons_file-type-css.svg"
+  },
+  {
+    "name": "JS",
+    "path": "/img/vscode-icons_file-type-js-official.svg"
+  },
+  {
+    "name": "Node JS",
+    "path": "/img/nodejs-icon.svg"
+  },
+  {
+    "name": "Express JS",
+    "path": "/img/express-109.svg"
+  },
+  {
+    "name": "Python",
+    "path": "/img/socket-io.svg"
+  },
+  {
+    "name": "Mongo DB",
+    "path": "/img/mongodb-icon-1.svg"
+  },
+  {
+    "name": "MySQL",
+    "path": "/img/mysql-6.svg"
+  },
+  {
+    "name": "Java",
+    "path": "/img/java-4.svg"
+  }
+]
