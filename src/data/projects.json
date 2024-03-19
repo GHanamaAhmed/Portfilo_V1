@@ -1,5 +1,21 @@
 [
   {
+    "img": "/img/bilwafi.shop_.webp",
+    "title": "beauty shop",
+    "description": "The Beauty Shop project is a comprehensive online platform with Dashboard designed to cater to the beauty needs of clients.",
+    "tech": "HTML, JavaScript, React , CSS, TailwindCSS, Nextjs , NodeJS, Express, MongoDB, Mongoose, Epayment",
+    "url": "https://bilwafi.shop",
+    "urlGithub": ""
+  },
+  {
+    "img": "/img/friha-ecommerce-aihsu2qo8-crow.vercel.app_.webp",
+    "title": "beauty shop",
+    "description": "Friha is a one-stop online destination for men's fashion, tailored to provide a seamless shopping experience.",
+    "tech": "HTML, JavaScript, React , CSS, TailwindCSS, Nextjs , NodeJS, Express, MongoDB, Mongoose, Epayment",
+    "url": "https://friha-ecommerce-aihsu2qo8-crow.vercel.app/",
+    "urlGithub": ""
+  },
+  {
     "img": "/img/ghanamaahmed.github.io_Hydra-Lading-Page_ .webp",
     "title": "VR Landing Page",
     "description": "",
@@ -30,13 +46,5 @@
     "tech": "HTML, JavaScript, React , CSS, TailwindCSS, Vite , NodeJS, Express, MongoDB, Mongoose, JWT, Bcrypt, QRCode, flutter, Dart, Socket.io",
     "url": "https://students-attendance.vercel.app/Student-Attendance/sign/signin",
     "urlGithub": "https://github.com/GHanamaAhmed/students-attendance-web-site"
-  },
-  {
-    "img": "/img/bilwafi.shop_.webp",
-    "title": "beauty shop",
-    "description": "The Beauty Shop project is a comprehensive online platform with Dashboard designed to cater to the beauty needs of clients.",
-    "tech": "HTML, JavaScript, React , CSS, TailwindCSS, Nextjs , NodeJS, Express, MongoDB, Mongoose, Epayment",
-    "url": "https://bilwafi.shop",
-    "urlGithub": ""
   }
 ]
