@@ -1,5 +1,13 @@
 [
   {
+    "img": "/img/flower-shop-m19b9w07t-crow.vercel.app_.webp",
+    "title": "flowers shop",
+    "description": "Experience the art of floristry with Petal Haven's training project. Delve into the world of blooms and cultivate your skills in floral arrangement.",
+    "tech": "HTML, JavaScript, React , CSS, TailwindCSS, Nextjs , MongoDB, Prisma, Next_Auth, Epayment",
+    "url": "https://flower-shop-m19b9w07t-crow.vercel.app/",
+    "urlGithub": "https://github.com/GHanamaAhmed/flower_shop"
+  },
+  {
     "img": "/img/bilwafi.shop_.webp",
     "title": "beauty shop",
     "description": "The Beauty Shop project is a comprehensive online platform with Dashboard designed to cater to the beauty needs of clients.",
@@ -9,7 +17,7 @@
   },
   {
     "img": "/img/friha-ecommerce-aihsu2qo8-crow.vercel.app_.webp",
-    "title": "beauty shop",
+    "title": "Fri7a ecommerce",
     "description": "Friha is a one-stop online destination for men's fashion, tailored to provide a seamless shopping experience.",
     "tech": "HTML, JavaScript, React , CSS, TailwindCSS, Nextjs , NodeJS, Express, MongoDB, Mongoose, Epayment",
     "url": "https://friha-ecommerce-aihsu2qo8-crow.vercel.app/",

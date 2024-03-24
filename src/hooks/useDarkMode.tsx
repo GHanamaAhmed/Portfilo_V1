@@ -1,22 +1,39 @@
 "use client";
-import React, { useLayoutEffect, useState } from "react";
-export default function useDarkMode() {
-  const [theme, setTheme] = useState<"dark" | "light">();
-  useLayoutEffect(() => {
-    if (
-      theme == "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
-    }
-  }, [theme]);
-  const toglgeDarkMode = () => {
-    setTheme((prevValue) => (theme == "dark" ? "light" : "dark"));
+import { useEffect, useState } from "react";
+
+const useDarkMode = () => {
+  const [theme, setTheme] = useState("light");
+  const [componentMounted, setComponentMounted] = useState(false);
+
+  const setMode = (mode: string) => {
+    localStorage.theme = mode;
+    document.documentElement.classList.add(mode);
+    setTheme(mode);
   };
-  return { theme, toglgeDarkMode };
-}
+
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setMode("dark");
+    } else {
+      setMode("light");
+    }
+  };
+
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem("theme");
+    if (localTheme) {
+      setTheme(localTheme);
+      document.documentElement.classList.add(localTheme);
+    } else {
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      setMode(prefersDark ? "dark" : "light");
+    }
+    setComponentMounted(true);
+  }, []);
+
+  return [theme, toggleTheme, componentMounted];
+};
+
+export default useDarkMode;

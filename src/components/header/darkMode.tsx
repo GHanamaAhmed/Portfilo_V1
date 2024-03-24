@@ -1,11 +1,16 @@
+"use client";
 import useDarkMode from "@/hooks/useDarkMode";
 import { memo } from "react";
 export default memo(function DarkMode() {
-  const { theme, toglgeDarkMode } = useDarkMode();
+  const [theme, toggleTheme,componentMounted] = useDarkMode();
   return (
     <div>
       <input type="checkbox" className="checkbox" id="checkbox" />
-      <label onClick={toglgeDarkMode} htmlFor="checkbox" className="label">
+      <label
+        onClick={toggleTheme as () => void}
+        htmlFor="checkbox"
+        className="label"
+      >
         <img
           src="./img/icons8-moon-and-stars-96.png"
           alt=""
