@@ -2,7 +2,7 @@
 import useDarkMode from "@/hooks/useDarkMode";
 import { memo } from "react";
 export default memo(function DarkMode() {
-  const [theme, toggleTheme,componentMounted] = useDarkMode();
+  const [theme, toggleTheme] = useDarkMode();
   return (
     <div>
       <input type="checkbox" className="checkbox" id="checkbox" />
