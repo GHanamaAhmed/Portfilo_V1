@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div id="root" className="dark:bg-darkMode">
+        <div id="root" className="bg-darkMode dark:bg-textLight">
           <div className="App relative">
             <MenuContextProvider>
               <Header />
