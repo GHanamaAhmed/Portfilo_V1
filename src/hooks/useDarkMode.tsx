@@ -7,6 +7,9 @@ const useDarkMode = () => {
 
   const setMode = (mode: string) => {
     localStorage.theme = mode;
+    document.documentElement.classList.remove(
+      mode == "dark" ? "light" : "dark"
+    );
     document.documentElement.classList.add(mode);
     setTheme(mode);
   };
@@ -23,6 +26,9 @@ const useDarkMode = () => {
     const localTheme = window.localStorage.getItem("theme");
     if (localTheme) {
       setTheme(localTheme);
+      document.documentElement.classList.remove(
+        localTheme == "dark" ? "light" : "dark"
+      );
       document.documentElement.classList.add(localTheme);
     } else {
       const prefersDark = window.matchMedia(
