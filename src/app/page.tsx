@@ -3,7 +3,7 @@ import Tech from "@/components/tech/tech";
 import Project from "@/components/projects/projects";
 import Contacts from "./_components/contacts";
 import Footer from "@/components/footer";
-export default memo(function page() {
+export default function page() {
   return (
     <>
       <div>
@@ -29,4 +29,4 @@ export default memo(function page() {
       <Footer />
     </>
   );
-});
+};
