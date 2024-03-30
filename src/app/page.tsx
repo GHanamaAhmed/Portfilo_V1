@@ -4,7 +4,7 @@ import Project from "@/components/projects/projects";
 import Contacts from "./_components/contacts";
 import Footer from "@/components/footer";
 export default memo(function page() {
-  reurn (
+  return (
     <>
       <div>
         <div className="flex flex-col items-center w-full gap-3 py-24 md:py-28 lg:py-36 md:flex-row-reverse md:justify-around lg:px-28">
