@@ -36,7 +36,7 @@
     "title": "Lays-Cryps Landing Page",
     "description": "",
     "tech": "HTML, JavaScript, React , CSS, TailwindCSS, Vite ",
-    "url": "https://ghanamaahmed.github.io/Hydra-Lading-Page/",
+    "url": "https://ghanamaahmed.github.io/Lays-Cryps",
     "urlGithub": ""
   },
   {
@@ -54,5 +54,13 @@
     "tech": "HTML, JavaScript, React , CSS, TailwindCSS, Vite , NodeJS, Express, MongoDB, Mongoose, JWT, Bcrypt, QRCode, flutter, Dart, Socket.io",
     "url": "https://students-attendance.vercel.app/Student-Attendance/sign/signin",
     "urlGithub": "https://github.com/GHanamaAhmed/students-attendance-web-site"
+  },
+  {
+    "img": "/img/codepure.vercel.app.png",
+    "title": "Product to Discover and Secure Your Apps from Vulnerabilities",
+    "description": "Product to Discover and Secure Your Apps from Vulnerabilities",
+    "tech": "HTML, JavaScript, React , CSS, TailwindCSS, NextJS, Framer motion , i18n",
+    "url": "https://codepure.vercel.app",
+    "urlGithub": ""
   }
 ]
