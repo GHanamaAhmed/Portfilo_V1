@@ -1,0 +1,55 @@
+name: Protfolio CI/CD
+on: 
+    push:
+      branches:
+        - main
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH into VPS and deploy
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{secrets.VPS_HOST}}
+          port: ${{secrets.VPS_SSH_PORT || '22'}}
+          username: ${{secrets.VPS_USERNAME}}
+          password: ${{ secrets.VPS_PASSWORD }}
+          script_stop: true
+          script: |
+            set -e
+            REPO_PUBLIC="https://github.com/GHanamaAhmed/Portfilo_V1.git"
+            REPO_PRIVATE="https://${{secrets.GH_TOKEN}}@github.com/GHanamaAhmed/Portfilo_V1.git"
+            BRANCH=main
+            APP_DIR=Portfilo_V1
+
+            echo "Starting deployment to VPS..."
+            echo "APP_DIR is: ${APP_DIR}"
+
+            if [ ! -d "${APP_DIR}/.git" ]; then
+                echo "Cloning repository..."
+                git clone --branch "${BRANCH}" "${REPO_PRIVATE}" "${APP_DIR}"
+            fi
+            
+            echo "Changing directory to ${APP_DIR}"
+            cd "${APP_DIR}"
+
+            git remote set-url origin "${REPO_PRIVATE}"
+            git fetch origin "${BRANCH}"
+            git reset --hard main
+            git pull origin main
+
+            echo "Restoring original remote URL..."
+            git remote set-url origin "${REPO_PUBLIC}"
+
+            echo "Running docker-compose..."
+            docker-compose up -d --build --remove-orphans
+
+            echo "Cleaning up old images..."
+            docker image prune -f
+
+            echo "Deployment finished at $(date)"
+            date > "${APP_DIR}/.last_deploy"
+            echo "Deployment logs saved to ${APP_DIR}/.last_deploy"
+
+
+

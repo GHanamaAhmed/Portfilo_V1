@@ -9,8 +9,8 @@ export default function page() {
       <div>
         <div className="flex flex-col items-center w-full gap-3 py-24 md:py-28 lg:py-36 md:flex-row-reverse md:justify-around lg:px-28">
           <img
-            className="w-[200px] md:w-[250px]"
-            src="./img/50353683 1.png"
+            className="w-[200px] md:w-[250px] rounded-full"
+            src="./img/54191980.jpeg"
             alt=""
           />
           <div className="w-2/3 md:w-fit text-justify text-solidHeading text-xl font-bold md:text-4xl">
