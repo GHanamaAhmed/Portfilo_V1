@@ -20,7 +20,7 @@ jobs:
             REPO_PUBLIC="https://github.com/GHanamaAhmed/Portfilo_V1.git"
             REPO_PRIVATE="https://${{secrets.GH_TOKEN}}@github.com/GHanamaAhmed/Portfilo_V1.git"
             BRANCH=main
-            APP_DIR=Portfilo_V1
+            APP_DIR=~/Portfilo_V1
 
             echo "Starting deployment to VPS..."
             echo "APP_DIR is: ${APP_DIR}"
